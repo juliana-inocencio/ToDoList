@@ -15,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         new MySqlServerVersion(new Version(6, 0, 0)) 
     ));
 
+
 builder.Services.AddScoped<IToDoService, ToDoService>();
 builder.Services.AddScoped<IToDoRepository, ToDoRepository>();
 
